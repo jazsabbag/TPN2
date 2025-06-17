@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@font-face {
+  src: url(https://raw.githubusercontent.com/google/fonts/main/ofl/montserratalternates/MontserratAlternates-Regular.ttf);
+  font-family: 'mifuente';
+  font-weight: 400;
+}
+
+
+
+body {
+  font-family: "Proza Libre", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background: #FAF3EB; 
+  color: #0D0D55;       
+  margin: 0;
+}
+
+  
+  
+header {
+  background-color: #0D0D55; 
+  padding: 10px;
+  color: #D9F103;            
+  text-align: center;
+  font-family: "Proza Libre", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+header p {           
+    font-family: "Proza Libre", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  }
+
+
+nav {
+  background-color: #D2C7FF; 
+  padding: 8px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #FF99DC; 
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #D9F103; 
+}
+
+main {
+  padding: 40px;
+  text-align: center;
+  font-family: 'mifuente';
+  color: #0D0D55;
+  display: flex;
+  justify-content: center;
+}
+
+.escribir {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #D9F103;
+  width: 0;
+  animation: escribir 4s steps(40, end) forwards, parpadeo 0.8s step-end infinite;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 10px;
+  color: #0D0D55;
+}
+
+@keyframes escribir {
+  from { width: 0px; }
+  to { width: 500px; }
+}
+
+@keyframes parpadeo {
+  0%, 100% { border-color: #D9F103; }
+  50% { border-color: transparent; }
+}
+
+#grid-galeriaespacio {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+
+img {
+  width: 80%;
+  height: 350px;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+}
+
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(13, 13, 85, 0.3); 
+}
+
+#portfolio h3, h4 {
+    font-family: "Proza Libre", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  color: #0D0D55;
+}
+
+.proyecto {
+width: 300px;
+background-color:  #D2C7FF; 
+border: 1px solid #ddd;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+padding: 10px;
+justify-content: center;
+transition: all 0.5s linear ;
+}
+
+.proyecto:hover {
+    box-shadow:rgba(0, 0, 0, 0.3); ;
+}
+
+
+
+#Servicios {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+
+}
+footer {
+    background-color: #FAF3EB;  /* mismo color de fondo */
+    color: #0D0D55;             /* navy */
+    text-align: center;
+    padding: 20px 0;
+    font-family: "Proza Libre", sans-serif;
+    margin-top: 50px;
+  }
+  
+  footer p {
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+ 
+  
+  .redes a {
+    margin: 0 10px;
+    color: #FF99DC;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .redes a:hover {
+    color: #D9F103;
+  }
+  
